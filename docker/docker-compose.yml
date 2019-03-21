@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+
+  poker_faces_php:
+    build:
+      context: ..
+      dockerfile: docker/php/Dockerfile
+      target: poker-faces-php-dev
+    image: poker-faces-php:dev
+    container_name: poker-faces-php
+    volumes:
+      - ../:/opt/code/poker-faces
+    expose:
+      - 9001
+    env_file:
+      - docker-default.env
+      - ../.env
