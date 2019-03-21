@@ -1,0 +1,4 @@
+actor: PokerHandActor
+modules:
+    enabled:
+        - Asserts

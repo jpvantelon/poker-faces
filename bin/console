@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+
+set_time_limit(0);
+
+require dirname(__DIR__).'/vendor/autoload.php';
+
+$application = new Application();
+
+$application->add(new \App\Command\PokerCompareCommand());
+
+$application->run();
