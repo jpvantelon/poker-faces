@@ -2,6 +2,10 @@
 
 ## Direct execution using Docker
 
+### Installation
+
+Install Docker and docker-compose.
+
 ### Execute Comparator
 
 Run `./docker-run.sh`, then, in Docker container, execute comparison with :
