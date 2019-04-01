@@ -105,7 +105,7 @@ class PokerHandsScoreCalculator
                         return 0;
                     }
 
-                    return ($card1->getValue() < $card2->getValue()) ? -1 : 1;
+                    return ($card1->getValue() > $card2->getValue()) ? -1 : 1;
                 }
             );
 
