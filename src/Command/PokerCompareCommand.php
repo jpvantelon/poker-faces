@@ -45,7 +45,7 @@ class PokerCompareCommand extends Command
                 $result = sprintf(
                     'All tied up with %s and %s',
                     $pokerHand1->getBestHandAsString(),
-                    $pokerHand1->getBestHandAsString()
+                    $pokerHand2->getBestHandAsString()
                 );
                 $io->block($result, null, 'fg=yellow');
                 break;
